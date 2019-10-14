@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.settings {
+  height: 60px;
+  background-color: rgb(192, 190, 190); 
+}
+
+button {
+  margin: 8px;
+  padding: 8px;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: rgb(219, 219, 219);
+  width: 480px;
+  height: 480px;
+  border: .5px darkorange dotted;
+  display: grid;
+  grid-template-columns: repeat(32, 15px);
+  grid-template-rows: repeat(32, 15px);
+}
+
+.item {
+  height: 15px;
+  width: 15px;
+  border: 0;
+}
