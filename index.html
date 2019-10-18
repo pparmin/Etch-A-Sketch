@@ -6,81 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:100&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-  <div class="settings">
-    <button id="create">Create Grid</button>
-    <button id="size">Choose Size</button>
-    <button id="clear">Clear All</button>
-  </div>
+    <div class="settings">
+      <div class="logo">
+        <p>ETCH</p>
+        <p>A</p>
+        <p>SKETCH</p>
+      </div>
+      <span id="new">new game</span>
+      <span id="clear">clear all</span>
+      <span id="eraser">eraser</span>
+      <span id="normal">normal</span>
+      <span id="white">white</span>
+      <span id="random">random</span>
+    </div>
 
-  <div class="container">
+    <div class="game-window"></div>
 
-  </div>
-
-
-  <script>
-    /*
-    *** Whats still lacking? ***
-    - Proper styling (look at original Etch-A-Sketch for inspiration)
-    - More functionality:
-      - Different colors (random function that creates rainbow colors)
-      - Eraser 
-
-    - Make an interactive grid size. 
-      --> Ask for the number of squares and then make proper calculations:
-          The number of squares influences:
-            - for-loop iterators (exit condition number creates the cell-size for each div)
-            - grid-template-columns/grid-template-rows number
-            - Calculation for the size of squares: height / square number & width / square number
-
-
-    - Make proper functions for the buttons
-
-    *** ISSUES *** 
-    How can 
-    */
-
-    const button = document.querySelector('#create');
-    const sizeButton = document.querySelector('#size');
-    const container = document.querySelector('.container');
-
-    button.addEventListener('click', e => {
-      for (let i = 0; i < 32; i++) {
-        for (let j = 0; j < 32; j++) {
-          const newDiv = document.createElement('div');
-          newDiv.setAttribute('class', 'item');
-          newDiv.style['text-align'] = 'center';
-          newDiv.style['grid-area'] = `${i} / ${j} / span 1 / span 1`;
-
-          container.appendChild(newDiv);
-          console.log(`grid item has been loaded with rowstart: ${i} and colstart: ${j}`);
-
-          newDiv.addEventListener('mouseover', e => {
-            
-            newDiv.style['background-color'] = 'rgb(119, 116, 116)';
-            newDiv.style.transform = 'scale(1.1)';
-          });
-
-          newDiv.addEventListener('mouseout', e => {
-            newDiv.style.transform = 'scale(1.0)';
-            //newDiv.style['background-color'] = 'rgb(219, 219, 219)';
-          });
-        }
-      }
-    });
-
-    sizeButton.addEventListener('click', e => {
-      console.log(`The value of ${newDiv}`);
-      
-    
-
-
-    });
-
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
 

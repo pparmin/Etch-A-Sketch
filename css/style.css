@@ -4,29 +4,70 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 .settings {
-  height: 60px;
-  background-color: rgb(192, 190, 190); 
+  color: rgb(250, 241, 175);
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background-color: rgb(112, 80, 80); 
+  display: flex;
+  flex-direction: column;
+  /*box-shadow: 3px 0px 2px 0px #88AEDA;*/
 }
 
-button {
-  margin: 8px;
-  padding: 8px;
+.logo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 54px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .5px dotted rgb(250, 241, 175);
+  /*border-bottom: .5px dotted rgb(136, 174, 218);*/
 }
 
-.container {
-  margin: 0 auto;
-  background-color: rgb(219, 219, 219);
-  width: 480px;
-  height: 480px;
-  border: .5px darkorange dotted;
-  display: grid;
-  grid-template-columns: repeat(32, 15px);
-  grid-template-rows: repeat(32, 15px);
+.logo p {
+  font-family: 'Roboto Slab';
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.5em;
+  margin-top: 10px;
+}
+
+.settings span {
+  font-family: 'Roboto Mono';
+  text-align: center;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  font-size: 16px;
+  background-color:  rgb(112, 80, 80);
+  padding: 20px;
+  border-bottom: .5px dotted rgb(250, 241, 175);
+}
+
+.settings span:hover {
+  background-color:  rgb(218, 199, 136);
+  color: rgb(112, 80, 80);
+  border-bottom: .5px dotted rgb(112, 80, 80);
+}
+
+#black {
+  border-bottom: 0;
+}
+
+.game-window {
+  background-color: rgb(218, 199, 136);
+  height: 100%;
+  margin-left: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item {
-  height: 15px;
-  width: 15px;
   border: 0;
 }
