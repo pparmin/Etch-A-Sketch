@@ -72,7 +72,7 @@ function createGrid(squareNumber, width, height) {
 
     newSquareNumber = prompt("Choose the size of the matrix: (Max 64)");
     if (newSquareNumber > 64) {
-      alert("Please choose a number smaller than 64");
+      alert("Please choose a number smaller than or equal to 64");
       createGrid(32, 480, 480);
     } else { 
       createGrid(newSquareNumber, 480, 480);
