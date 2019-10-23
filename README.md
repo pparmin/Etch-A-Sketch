@@ -13,7 +13,9 @@ a better idea of changing CSS style rules interactively.
 
 _UPDATE 23.10.19_
 After having refactored the whole codebase I've had a couple of very important additional learning outcomes. Most importantly it allowed me to understand why assigning everything it's own function that only takes care of one specific thing is so important. 
-In order to achieve this I had to rewrite almost the whole code and dive much deeper into DOM manipulation. I had to learn:   - how to pass around function and variable values from function to function
+In order to achieve this I had to rewrite almost the whole code and dive much deeper into DOM manipulation. I had to learn:
+
+- how to pass around function and variable values from function to function
 - to properly manipulate DOM elements
 - what a HTML collection is and how to store and access DOM elements in an array
 
